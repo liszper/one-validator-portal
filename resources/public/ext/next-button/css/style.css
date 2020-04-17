@@ -1,0 +1,50 @@
+/* Variables */
+/* Mixins */
+/* Resets */
+* {
+  box-sizing: border-box;
+}
+
+/* Center button for demo purposes */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Button styles */
+button {
+  padding: 0;
+  position: relative;
+  width: 130px;
+  height: 70px;
+  line-height: 70px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  text-align: left;
+  color: #3C474B;
+  background: none;
+  border: none;
+  outline: none;
+  webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button__arrow {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate3d(-50%, 0, 0);
+  width: 120px;
+  fill: #3C474B;
+  transition: 0.35s;
+}
+
+/* Hover styles */
+button:hover .button__arrow {
+  transform: translate3d(0, 0, 0);
+}

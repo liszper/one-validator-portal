@@ -1,0 +1,179 @@
+/*main stuff*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'segoe ui light', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+body .container {
+  float: left;
+  background-color: #ffffff;
+  width: 50%;
+  height: 1000px;
+  color: #009999;
+}
+/*fonts*/
+
+.white h1,
+.green h1 {
+  font-family: 'segoe ui semibold', sans-serif;
+  font-size: 5em;
+  text-align: left;
+}
+
+.green h1 {
+  text-align: right;
+}
+/*buttonz*/
+
+.container button {
+  width: 175px;
+  height: 50px;
+  margin-top: 100px;
+  font-size: 1.5em;
+  border: 2px #ffffff solid;
+  background-color: #009999;
+}
+
+.container button a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 48px 12px 46px;
+}
+
+.container button a:hover {
+  background-color: #ffffff;
+  color: #009999;
+}
+/*form stuff*/
+
+input,
+label,
+button {
+  margin: 32px 64px 32px 64px;
+  font-size: 1.5em;
+}
+
+input[type="text"] {
+  width: 250px;
+  height: 50px;
+  border: 2px #ffffff solid;
+}
+
+::-webkit-input-placeholder {
+  color: #009999;
+  padding-left: 8px;
+}
+
+:-moz-placeholder {
+  color: #009999;
+}
+
+::-moz-placeholder {
+  color: #009999;
+}
+
+:-ms-input-placeholder {
+  color: #009999;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: #009999;
+  border: 2px #ffffff solid;
+  cursor: pointer;
+}
+
+input[type="radio"] + label,
+input[type="radio"] + label span {
+  border-radius: 25px;
+}
+
+input[type="checkbox"] + label span {
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 32px;
+  margin-left: 17px;
+  margin-top: 2px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"] + label span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input[type="radio"] + label span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+}
+
+input[type="checkbox"]:checked + label span,
+input[type="radio"]:checked + label span {
+  background-color: #ffffff;
+}
+
+label p {
+  margin-left: 50px;
+  width: 250px;
+}
+/*re-coloring*/
+
+body .green {
+  background-color: #009999;
+  color: #ffffff;
+}
+
+.container.white button {
+  border: 2px #009999 solid;
+  background-color: #ffffff;
+}
+
+.container.white button a {
+  color: #009999;
+}
+
+.container.white button a:hover {
+  background-color: #009999;
+  color: #ffffff;
+}
+
+.white input[type="text"] {
+  border: 2px #009999 solid;
+}
+
+.white input[type="checkbox"] + label,
+.white input[type="radio"] + label {
+  background-color: #ffffff;
+  border: 2px #009999 solid;
+  cursor: pointer;
+}
+
+.white input[type="checkbox"]:checked + label span,
+.white input[type="radio"]:checked + label span {
+  background-color: #009999;
+}
+/*for the sake of responsiveness...*/
+
+@media (max-width: 650px) {
+  .white h1, .green h1 {
+    font-size: 3em;
+  }
+}

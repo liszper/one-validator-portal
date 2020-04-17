@@ -1,0 +1,36 @@
+/* Button styles */
+button.gobutton {
+  padding: 0;
+  position: absolute;
+  right:10vmin;
+  bottom:17vmin;
+  height: 70px;
+  width: 300px;
+  line-height: 40px;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  text-align: left;
+  color: #3C474B;
+  background: none;
+  border: none;
+  outline: none;
+  webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  z-index:50;
+}
+
+.button__arrow {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transform: translate3d(-50%, 0, 0);
+  width: 130px;
+  fill: rgb(255, 82, 82);
+  transition: 0.35s;
+}
+
+/* Hover styles */
+button.gobutton:hover .button__arrow {
+  transform: translate3d(0, 0, 0);
+}

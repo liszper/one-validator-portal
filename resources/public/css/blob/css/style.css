@@ -1,0 +1,95 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #000000;
+}
+
+.blip {
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.b1 {
+  left: 50%;
+  top: 30%;
+}
+
+.b2 {
+  left: 52%;
+  top: 35%;
+}
+
+.b3 {
+  left: 51%;
+  top: 36%;
+}
+
+.b4 {
+  left: 49%;
+  top: 37%
+}
+
+.b5 {
+  left: 50.5%;
+  top: 40%;
+}
+
+.b6 {
+  left: 25%;
+  top: 25%;
+  background-image: radial-gradient(#000000 0%, #000000 8px, rgba(0, 0, 0, 0.3) 12px, rgba(0, 0, 0, 0) 19px);
+}
+
+.b7 {
+  left: 15%;
+  top: 25%;
+}
+
+.blip:after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  top: -5px;
+  left: -5px;
+  -webkit-animation: pulsate 1.5s ease-out infinite;
+          animation: pulsate 1.5s ease-out infinite;
+}
+
+/*
+https://codepen.io/roydigerhund/pen/bpRpJz
+*/
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}

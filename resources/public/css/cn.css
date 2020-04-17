@@ -1,0 +1,274 @@
+.cn-component * {
+	position: relative;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;}
+.toggle3D {
+    position:absolute;
+    top:30vh;
+    left:10vw;}
+.cn-component a, button {
+	outline: none;}
+.cn-component a {
+	text-decoration: none;}
+.cn-component {
+	position: relative;
+	height: 60vmin;}
+.cn-button {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	z-index: 11;
+	margin-top: -41.5vmin;
+	margin-left: -11.5vmin;
+	width: 23vmin;
+	height: 23vmin;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.1);
+	color: white;
+	text-align: center;
+	font-weight: 700;
+	font-size: 2vmin;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	border:0px;
+  box-shadow: 0px 1.1vmin 2vmax 0 rgba(0, 0, 0, 0.37);}
+.view3d {
+-webkit-transform: scale(1.1)rotateX(+17deg) skewX(-21deg) !important;
+-moz-transform: scale(1.1)rotateX(+17deg) skewX(-21deg) !important;
+-ms-transform: scale(1.1)rotateX(+17deg) skewX(-21deg) !important;
+transform: scale(1.1) rotateX(+17deg) skewX(-21deg) !important;}
+.cn-button.view3d {
+	margin-top: -38vmin !important;
+	margin-left: -7vmin !important;
+	left: 70% !important;}
+.cn-wrapper.view3d {
+	margin-top: -69vmin !important;
+	left: 70% !important;}
+.csstransforms .cn-wrapper {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	z-index: 10;
+	margin-top: -72vmin;
+	margin-left: -50vmin;
+	width: 100vmin;
+	height: 100vmin;
+	border-radius: 50%;
+	background: transparent;
+	opacity: 0;
+	pointer-events: none;
+	overflow: hidden;}
+.csstransforms .cn-wrapper:after{
+  position: absolute;
+  content:"";
+  display:block;
+  font-size:8vmin;
+  width:23vmin;
+  height:23vmin;
+  margin-left: -11.5vmin;
+  margin-top: -19.5vmin;
+  left: 50%;
+  top:50%;
+  border-radius: 50%;
+  z-index:10;
+  background:rgba(0,0,0,0.7);}
+.csstransforms .opened-nav {
+	border-radius: 0%;
+	opacity: 1;
+	pointer-events: auto;}
+.csstransforms .cn-wrapper .cn-li {
+	position: absolute;
+	top: 50%;	left: 50%;
+	overflow: hidden;
+	margin-top: 2vmin;
+	margin-left: -100vmin;
+	width: 100vmin;
+	height: 40vmin;
+	font-size: 6vmin;
+	z-index:9;
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	pointer-events: none;}
+.csstransforms .cn-wrapper .cn-li a {
+	position: absolute;
+	right: -20vmin;
+	bottom: -20vmin;
+	display: block;
+	width: 40vmin;
+	height: 40vmin;
+	border-radius: 50%;
+	background: -webkit-radial-gradient(transparent 40%, #fff 40%);
+	background: -moz-radial-gradient(transparent 40%, #fff 40%);
+	background: radial-gradient(transparent 40%, #fff 40%);
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	line-height: 8vmin;
+	pointer-events: auto;
+    box-shadow: 0px 1.1vmin 2vmax 0 rgba(0, 0, 0, 0.37);}
+.csstransforms .cn-wrapper .cn-li a span {
+	display: block;
+	font-size: 2vmin;
+	font-weight: 700;}
+.csstransforms .cn-wrapper .cn-li a:hover,
+.csstransforms .cn-wrapper .cn-li a:active,
+.csstransforms .cn-wrapper .cn-li a:focus {
+	background: -webkit-radial-gradient(transparent 40%, #ddd 40%);
+	background: -moz-radial-gradient(transparent 40%, #ddd 40%);
+	background: radial-gradient(transparent 40%, #ddd 40%);}
+.csstransforms .cn-wrapper .cn-li a:focus {
+    position: fixed;}
+
+
+
+
+
+
+.csstransforms .cn-wrapper .cn-li.firstcirc a:hover {
+    right: -19.4vmin; bottom: -19.4vmin;
+}
+.csstransforms .cn-wrapper .cn-li.secondcirc a:hover {
+    right: -27.2vmin; bottom: -27.2vmin;
+}
+
+.csstransforms .cn-wrapper .cn-li.secondcirc {
+	z-index:8;
+	-webkit-transform: rotate(75deg) skew(60.5deg);
+	-moz-transform: rotate(75deg) skew(60.5deg);
+	-ms-transform: rotate(75deg) skew(60.5deg);
+	transform: rotate(75deg) skew(60.5deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+}
+.csstransforms .cn-wrapper .cn-li.secondcirc a {
+	-webkit-transform: skew(-60.5deg) rotate(-75deg) scale(1);
+	-moz-transform: skew(-60.5deg) rotate(-75deg) scale(1);
+	-ms-transform: skew(-60.5deg) rotate(-75deg) scale(1);
+	transform: skew(-60.5deg) rotate(-75deg) scale(1);
+	right: -28vmin;
+	bottom: -28vmin;
+	width: 56vmin;
+	height: 56vmin;
+}
+.csstransforms .cn-wrapper .cn-li.secondcirc a span{
+	font-size: 1.4vmin;
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(7) {
+	-webkit-transform: rotate(-0deg) skew(60.5deg);
+	-moz-transform: rotate(-0deg) skew(60.5deg);
+	-ms-transform: rotate(-0deg) skew(60.5deg);
+	transform: rotate(-0deg) skew(60.5deg);
+}
+
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(8) {
+	-webkit-transform: rotate(30deg) skew(60.5deg);
+	-moz-transform: rotate(30deg) skew(60.5deg);
+	-ms-transform: rotate(30deg) skew(60.5deg);
+	transform: rotate(30deg) skew(60.5deg);
+}
+
+.csstransforms .opened-nav  .cn-li.secondcirc:nth-child(9) {
+	-webkit-transform: rotate(60deg) skew(60.5deg);
+	-moz-transform: rotate(60deg) skew(60.5deg);
+	-ms-transform: rotate(60deg) skew(60.5deg);
+	transform: rotate(60deg) skew(60.5deg);
+}
+
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(10) {
+	-webkit-transform: rotate(90deg) skew(60.5deg);
+	-moz-transform: rotate(90deg) skew(60.5deg);
+	-ms-transform: rotate(90deg) skew(60.5deg);
+	transform: rotate(90deg) skew(60.5deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(11) {
+	-webkit-transform: rotate(120deg) skew(60.5deg);
+	-moz-transform: rotate(120deg) skew(60.5deg);
+	-ms-transform: rotate(120deg) skew(60.5deg);
+	transform: rotate(120deg) skew(60.5deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(12) {
+	-webkit-transform: rotate(150deg) skew(60.5deg);
+	-moz-transform: rotate(150deg) skew(60.5deg);
+	-ms-transform: rotate(150deg) skew(60.5deg);
+	transform: rotate(150deg) skew(60.5deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(13) {
+	-webkit-transform: rotate(180deg) skew(60.5deg);
+	-moz-transform: rotate(180deg) skew(60.5deg);
+	-ms-transform: rotate(180deg) skew(60.5deg);
+	transform: rotate(180deg) skew(60.5deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(13) span {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(14) {
+	-webkit-transform: rotate(210deg) skew(60.5deg);
+	-moz-transform: rotate(210deg) skew(60.5deg);
+	-ms-transform: rotate(210deg) skew(60.5deg);
+	transform: rotate(210deg) skew(60.5deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(14) span {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(15) {
+	-webkit-transform: rotate(240deg) skew(60.5deg);
+	-moz-transform: rotate(240deg) skew(60.5deg);
+	-ms-transform: rotate(240deg) skew(60.5deg);
+	transform: rotate(240deg) skew(60.5deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(15) span {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(16) {
+	-webkit-transform: rotate(270deg) skew(60.5deg);
+	-moz-transform: rotate(270deg) skew(60.5deg);
+	-ms-transform: rotate(270deg) skew(60.5deg);
+	transform: rotate(270deg) skew(60.5deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(16) span {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(17) {
+	-webkit-transform: rotate(300deg) skew(60.5deg);
+	-moz-transform: rotate(300deg) skew(60.5deg);
+	-ms-transform: rotate(300deg) skew(60.5deg);
+	transform: rotate(300deg) skew(60.5deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(17) span {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(18) {
+	-webkit-transform: rotate(-30deg) skew(60.5deg);
+	-moz-transform: rotate(-30deg) skew(60.5deg);
+	-ms-transform: rotate(-30deg) skew(60.5deg);
+	transform: rotate(-30deg) skew(60.5deg);
+}
+.csstransforms .opened-nav .cn-li.secondcirc:nth-child(18) span {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+

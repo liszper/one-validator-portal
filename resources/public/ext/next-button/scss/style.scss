@@ -1,0 +1,62 @@
+/* Variables */
+$color__blue: #3C474B;
+
+$transition: .35s;
+
+/* Mixins */
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Resets */
+* {
+  box-sizing: border-box; 
+}
+
+/* Center button for demo purposes */
+.center {
+  @include center;
+}
+
+/* Button styles */
+button {
+  padding: 0;
+  position: relative;
+  width: 130px;
+  height: 70px;
+  line-height: 70px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  text-align: left;
+  color: $color__blue;
+  background: none;
+  border: none;
+  outline: none;
+  webkit-tap-highlight-color: rgba(0,0,0,0);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button__arrow {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate3d(-50%, 0, 0);
+  width: 120px;
+  fill: $color__blue;
+  transition: $transition;
+}
+
+
+/* Hover styles */
+button:hover {
+  
+  .button__arrow {
+    transform: translate3d(0, 0, 0);
+  }
+}

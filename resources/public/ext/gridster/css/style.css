@@ -1,0 +1,11 @@
+.gridster {
+  display: block;
+  width: 100%;
+}
+.gridster div {
+  background: gray;
+  display: inline-block;
+}
+
+/**/
+

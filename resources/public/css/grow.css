@@ -1,0 +1,79 @@
+.grow {
+    background-size: contain;
+    background-repeat: no-repeat;
+	background:rgba(255,255,255,0);
+    position:absolute;
+    height: 100vmin;
+	padding-top:0%;
+    -webkit-filter: blur(0px) brightness(100%);
+    -moz-filter: blur(0px) brightness(100%);
+    -o-filter: blur(0px) brightness(100%);
+    -ms-filter: blur(0px) brightness(100%);
+    filter: blur(0px) brightness(100%);
+    background-size: 170% 170%;
+    background-position: center;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;}
+.grow:hover {
+    background-size: 100% 100%;
+	background:rgba(255,255,255,0);}
+
+.grow:hover + .imgtxt {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+	color:black;
+    top: 20vmin !important;}
+.imgtxt {
+    transform: translateX(-50%) translateY(-50%);
+    z-index:3000; 
+    pointer-events: none;
+    text-decoration: none;
+    position: absolute;
+    top: -20vmin !important;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -o-filter: none;
+    -ms-filter: none;
+    filter: none;
+    -moz-transition: all 1.25s;
+    -o-transition: all 1.25s;
+    -ms-transition: all 1.25s;
+    -webkit-transition: all 1.25s;
+    transition: all 1.25s;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    opacity: 1;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;}
+.imgtxt:hover {
+    cursor: default;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -o-filter: none;
+    -ms-filter: none;
+    filter: none;}
+.author {
+    font-size: 0.675em;
+    float: right;
+    transform: translateX(15px) translateY(5px);}
+

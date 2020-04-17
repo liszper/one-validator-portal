@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>[CSS3] Fancy Font</title>
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(https://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8fk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(https://fonts.gstatic.com/s/ptsansnarrow/v7/UyYrYy3ltEffJV9QueSi4UU-p1xzoRgkupcXIqgYFBc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v4/rxxXUYj4oZ6Q5oDJFtEd6vk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v6/mrl8jkM18OlOQN8JLgasD9V_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+  background-color: #f3832e;
+}
+
+#container {
+  width: 580px;
+  margin: 140px auto;
+  border: 3px double #fad2b4;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.3em;
+}
+
+h1 {
+  text-shadow: 6px 4px 0px #a5612d;
+  color: #eee;
+  font-family: 'Roboto Condensed';
+  font-size: 5.9em;
+}
+
+h2 {
+  font-size: 2.6em;
+  font-family: 'PT Sans Narrow';
+  letter-spacing: 0.5em;
+  color: #f5bc91;
+  font-style: italic;
+  text-shadow: 4px 2px 0px #a5612d;
+}
+
+h3 {
+  font-size: 2.16em;
+  font-family: 'Poiret One';
+  letter-spacing: 0.5em;
+  color: #74421c;
+  line-height: 0.9em;
+  text-transform: none;
+}
+
+h4 {
+  font-family: 'Fjalla One';
+  font-size: 5.9em;
+  font-weight: 800;
+  color: #a5612d;
+  font-style: italic;
+  line-height: 0em;
+  letter-spacing: 0.1em;
+  margin: 0.8em 0 0.9em -15px;
+}
+
+h5 {
+    font-family: 'Source Code Pro';
+  font-size: 2em;
+  color: #fad2b4;
+  letter-spacing: 0.36em;
+  line-height: 0em;
+}
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+    
+  </head>
+
+  <body>
+
+    <div id="container">
+  <h1>Fancy Font</h1>
+  <h2>is only fancy</h2>
+  <h3>if you let it be</h3>
+  <h4>Otherwise</h4>
+  <h5>You make it sad.</h5>
+</div>
+    
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,900);
+body {
+  background-color: #88f9e5;
+  font-family: "Roboto";
+}
+/*Card*/
+
+.card {
+  width: 300px;
+  height: 425px;
+  background-color: #fafafa;
+  margin: 100px auto;
+  border-radius: 6px;
+  box-shadow: 0 8px 25px #6bd4c1;
+}
+/*Big "+"*/
+
+.fader {
+  width: 100%;
+  height: 20px;
+}
+
+.fader:after {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: #ed2553;
+  box-shadow: 0 3px 5px #a63650;
+  float: right;
+  content: "+";
+  text-align: center;
+  line-height: 80px;
+  font-size: 2.2em;
+  color: #fff;
+  position: relative;
+  left: 40px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.fader:active:after {
+  box-shadow: 0 0 5px #a63650;
+  margin-top: 3px;
+}
+/*Name*/
+
+.title {
+  text-transform: uppercase;
+  color: #ed2553;
+  font-weight: 600;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  border-left: 4px solid #ed2553;
+  padding-left: 20px;
+  margin: 20px 0 50px 0;
+}
+/*Form*/
+
+.field {
+  width: 75%;
+  margin: 40px auto;
+  position: relative;
+}
+
+label {
+  font-size: 1em;
+  height: 4px;
+  display: block;
+  font-weight: 300;
+  color: #bbb;
+  cursor: text;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 6px;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+input[type=text] {
+  border: 0;
+  border-bottom: 1px solid #bbb;
+  width: 90%;
+  display: block;
+  color: #626350;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  background-color: transparent;
+  padding: 10px 10px 5px 5px;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border-bottom: 1px solid #ed2553;
+}
+
+input[type=text]:focus ~ label,
+input[type=text]:valid ~ label {
+  top: -10px;
+  font-size: 0.82em;
+  color: #ed2553;
+}
+/*Button*/
+
+.login-btn {
+  border: 2px solid #bbb;
+  background-color: transparent;
+  width: 75%;
+  height: 50px;
+  margin: 65px auto 30px auto;
+  display: block;
+  padding: 0;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 46px;
+  font-weight: 500;
+    -webkit-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+}
+
+.login-btn:hover {
+  color: #ed2553;
+  border: 2px solid #ed2553;
+}
+
+.login-btn:focus {
+  outline: none;
+}
+
+.login-btn:before,
+.login-btn:after {
+  content: "";
+  display: block;
+  float: left;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.login-btn:after {
+  float: right;
+  text-align: left;
+}
+
+.login-btn:before,
+.login-btn:after {
+  height: 100%;
+  width: 0%;
+  opacity: 0;
+  background-color: #ed2553;
+}
+
+.login-btn.active {
+  font-size: 0;
+}
+
+.login-btn.active:before,
+.login-btn.active:after {
+  opacity: 1;
+  width: 50%;
+}
+
+.login-btn.active {
+  color: #333;
+}
+/*Footer link*/
+
+.forgot {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #bbb;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  letter-spacing: 0.5px;
+}
+
+.forgot:hover {
+  color: #ed2553;
+}

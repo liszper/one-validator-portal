@@ -1,0 +1,60 @@
+.fade-into {
+    opacity:0;
+    -webkit-animation:fadeInto ease-in 1;
+    -moz-animation:fadeInto ease-in 1;
+    animation:fadeInto ease-in 1;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+
+#hidden {
+
+	visibility: hidden;}
+
+.one {
+-webkit-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s;
+
+
+}
+
+.one {
+-webkit-animation-delay: 0.2s;
+-moz-animation-delay: 0.2s;
+animation-delay: 0.2s;
+
+}
+
+.two {
+-webkit-animation-delay: 0.4s;
+-moz-animation-delay:0.4s;
+animation-delay: 0.4s;
+
+}
+
+.three {
+-webkit-animation-delay: 0.6s;
+-moz-animation-delay: 0.6s;
+animation-delay: 0.6s;
+
+}
+.four {
+-webkit-animation-delay: 0.8s;
+-moz-animation-delay: 0.8s;
+animation-delay: 0.8s;
+}
+.five {
+-webkit-animation-delay: 7.6s;
+-moz-animation-delay: 7.6s;
+animation-delay: 7.6s;
+}
+
+
+@-webkit-keyframes fadeInto { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeInto { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeInto { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }

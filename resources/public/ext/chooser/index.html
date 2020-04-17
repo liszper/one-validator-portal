@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Playing with webkit filters</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body {
+  width: 1100px;
+  margin: 50px auto;
+  background-color: #333;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+ul {
+  position: relative;
+  width: 1100px;
+  height: 396px;
+  perspective: 500;
+}
+li {
+  height: 200px;
+  width: 120px;
+  position: absolute;
+  border: 1px solid #686868;
+  height: 394px;
+  transform: scale(0.87);
+  transform-style: preserve-3d;
+  filter: grayscale(0%);
+  backface-visibility: hidden;
+  transition: -webkit-transform 300ms ease, opacity 300ms ease, -webkit-filter 500ms ease;
+}
+li span {
+  position: absolute;
+  top: 216px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  display: block;
+  opacity: 0;
+  transition: opacity 150ms ease-in;
+  user-select: none;
+}
+li:hover span {
+  opacity: 1;
+}
+li.hide {
+  transform: rotateY(120deg) scale(0.85);
+  opacity: 0;
+  transition: none;
+}
+li.fade {
+  -webkit-filter: grayscale(50%) blur(2px);
+  z-index: 1;
+}
+li.grow {
+  transform: scale(1) rotateX(2deg);
+  z-index: 10;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -5px -5px 5px rgba(0, 0, 0, 0.2), -5px 5px 5px rgba(0, 0, 0, 0.2), 5px -5px 5px rgba(0, 0, 0, 0.2);
+}
+li.next,
+li.prev {
+  transform: scale(0.95);
+  z-index: 9;
+}
+li.nextnext,
+li.prevprev {
+  transform: scale(0.9);
+  z-index: 8;
+}
+li:nth-child(1),
+li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4),
+li:nth-child(5) {
+  transform-origin: center right;
+}
+li:nth-child(1).hide,
+li:nth-child(2).hide,
+li:nth-child(3).hide,
+li:nth-child(4).hide,
+li:nth-child(5).hide {
+  transform: rotateY(-90deg) scale(0.85);
+}
+li:nth-child(6),
+li:nth-child(7),
+li:nth-child(8),
+li:nth-child(9),
+li:nth-child(10) {
+  transform-origin: center left;
+}
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <ul>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+  <li class="hide">
+    <span>Title</span>
+  </li>
+</ul>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

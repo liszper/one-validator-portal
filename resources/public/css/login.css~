@@ -1,0 +1,202 @@
+.login-card {
+  width: 50vh;
+  height: 66vh;
+  background-color: #fafafa;
+  margin: 14vh auto;
+  margin-bottom: 10vh;
+  border-radius: 6px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+.login-card .fader {
+  width: 100%;
+  height: 20px;
+}
+
+.login-card .fader:after {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  float: right;
+  content: "+";
+  text-align: center;
+  line-height: 80px;
+  font-size: 2.2em;
+  color: #fff;
+  position: relative;
+  left: 0px;
+  top: 30px;
+  cursor: pointer;
+    opacity:0;
+    -webkit-animation:move-in ease-in-out 1;
+    -moz-animation:move-in ease-in-out 1;
+    animation:move-in ease-in-out 1;
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2.3s;
+    -moz-animation-duration:2.3s;
+    animation-duration:2.3s;
+transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55)
+}
+@keyframes move-in {
+    0%   {left:20vh;opacity:0;}
+    100% {left:40px;opacity:1;}
+}
+.login-card .fader:hover:after {
+}
+@keyframes zoom {
+    0%   {-webkit-transform: scale(1);
+          transform: scale(1);}
+    50%  {-webkit-transform: scale(1.7);
+          transform: scale(1.1);}
+    100% {-webkit-transform: scale(1);
+          transform: scale(1);}
+}
+
+.login-card:hover .fader:after {
+
+	
+}
+.login-card .fader:active:after {
+-webkit-transform: scale(0.97);
+          transform: scale(0.ö7);
+}
+/*Name*/
+
+.login-card .title {
+  text-transform: uppercase;
+  color: #ed2553;
+  font-weight: 600;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  border-left: 4px solid #ed2553;
+  padding-left: 20px;
+  margin: 20px 0 50px 0;
+}
+/*Form*/
+
+.login-card .field {
+  width: 75%;
+  margin: 40px auto;
+  position: relative;
+}
+
+.login-card label {
+  font-size: 1em;
+  height: 4px;
+  display: block;
+  font-weight: 300;
+  color: #bbb;
+  cursor: text;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 6px;
+  -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.login-card input[type=text] {
+  border: 0;
+  border-bottom: 1px solid #bbb;
+  width: 90%;
+  display: block;
+  color: #626350;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  background-color: transparent;
+  padding: 10px 10px 5px 5px;
+}
+
+.login-card input[type=text]:focus {
+  outline: none;
+  border-bottom: 1px solid #ed2553;
+}
+
+.login-card input[type=text]:focus ~ label,
+.login-card input[type=text]:valid ~ label {
+  top: -10px;
+  font-size: 0.82em;
+  color: #ed2553;
+}
+/*Button*/
+
+.login-card .login-btn {
+  border: 2px solid #bbb;
+  background-color: transparent;
+  width: 75%;
+  height: 50px;
+  margin: 65px auto 30px auto;
+  display: block;
+  padding: 0;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 46px;
+  font-weight: 500;
+    -webkit-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+}
+
+.login-btn:hover {
+  color: #ed2553;
+  border: 2px solid #ed2553;
+}
+
+.login-btn:focus {
+  outline: none;
+}
+
+.login-btn:before,
+.login-btn:after {
+  content: "";
+  display: block;
+  float: left;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.login-btn:after {
+  float: right;
+  text-align: left;
+}
+
+.login-btn:before,
+.login-btn:after {
+  height: 100%;
+  width: 0%;
+  opacity: 0;
+  background-color: #ed2553;
+}
+
+.login-btn.active {
+  font-size: 0;
+}
+
+.login-btn.active:before,
+.login-btn.active:after {
+  opacity: 1;
+  width: 50%;
+}
+
+.login-btn.active {
+  color: #333;
+}
+/*Footer link*/
+
+.login-card .forgot {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #bbb;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  letter-spacing: 0.5px;
+}
+
+.login-card .forgot:hover {
+  color: #ed2553;
+}

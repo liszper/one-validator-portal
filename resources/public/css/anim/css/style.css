@@ -1,0 +1,133 @@
+/*
+https://subvisual.co/blog/posts/62-perfecting-a-css-3d-animation
+http://codepen.io/naps62/pen/ZGRVvx
+*/
+
+html, body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+section {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square-wrapper {
+  border: solid 1px #aaa;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #12d8f4;
+}
+
+.square-transform {
+  animation: transforming 2s linear infinite;
+}
+
+.square-rotate {
+  animation: rotating 1s linear infinite;
+}
+
+.square-skew {
+  animation: skewing 1.5s ease-in-out infinite;
+}
+
+.square-scale {
+  animation: scaling 1s ease-in-out infinite;
+}
+
+.square-mults {
+  animation: cluckery 4s linear infinite;
+}
+
+.square-rot-tran {
+  animation: rot-trans 2s linear infinite;
+}
+
+@keyframes rot-trans {
+  0% {
+    transform: rotateZ(0deg) translateX(30px);
+  }
+  100% {
+    transform: rotateZ(360deg) translateX(30px);
+  }
+}
+
+@-webkit-keyframes cluckery {
+  0% {
+    transform: translate(25px, 25px) scale(0.5, 0.5) rotate(0deg);
+  }
+  25% {
+    transform: translate(25px, -25px) scale(0.25, 0.25) rotate(180deg);
+  }
+  50% {
+    transform: translate(-25px, -25px) scale(0.5, 0.5) rotate(360deg);
+  }
+  75% {
+    transform: translate(-25px, 25px) scale(0.25, 0.25) rotate(540deg);
+  }
+  100% {
+    transform: translate(25px, 25px) scale(0.5, 0.5) rotate(720deg);
+  }
+}
+
+@-webkit-keyframes scaling {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes skewing {
+  0% {
+    transform: skew(-40deg);
+  }
+  50% {
+    transform: skew(40deg);
+  }
+  100% {
+    transform: skew(-40deg);
+  }
+}
+
+@-webkit-keyframes transforming {
+  0% {
+    transform: translate(25px, 25px);
+  }
+  25% {
+    transform: translate(-25px, 25px);
+  }
+  50% {
+    transform: translate(-25px, -25px);
+  }
+  75% {
+    transform: translate(25px, -25px);
+  }
+  100% {
+    transform: translate(25px, 25px);
+  }
+}
+
+@-webkit-keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
